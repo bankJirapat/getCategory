@@ -49,6 +49,7 @@ app.get('/filterGetCategory', async (req, res) => {
     console.log("dataAll : ", dataAll)
     let result = await filterCategory(dataAll, filter)
     res.send(result)
+
 })
 
 app.listen(port, () => {
